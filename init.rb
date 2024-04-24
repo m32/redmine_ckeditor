@@ -23,7 +23,7 @@ Redmine::Plugin.register :redmine_ckeditor do
   description 'This is a CKEditor plugin for Redmine'
   version '1.2.5'
   requires_redmine :version_or_higher => '5.0.0'
-  url 'https://github.com/gk122ß/redmine_ckeditor'
+  url 'https://github.com/gk1220/redmine_ckeditor'
 
   settings(:partial => 'settings/ckeditor')
 
