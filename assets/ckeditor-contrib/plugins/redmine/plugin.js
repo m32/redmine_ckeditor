@@ -8,7 +8,7 @@
       var preserved = [];
 
       // preserve Redmine macro
-      data = data.replace(/\{\{.*?\}\}/g, function(match) {
+      data = data.replace(/\{\{[\s\S]+?\}\}/g, function(match) {
         preserved.push(decodeEntities(match));
         return preservedPattern(preserved.length);
       });
