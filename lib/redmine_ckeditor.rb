@@ -35,7 +35,7 @@ module RedmineCkeditor
 
     def default_toolbar
       @default_toolbar ||= %w[
-        Source ShowBlocks -- Undo Redo - Find Replace --
+        Source ShowBlocks -- Undo Redo - Find Replace - Copy Paste Image --
         Bold Italic Underline Strike - Subscript Superscript -
         NumberedList BulletedList - Outdent Indent Blockquote -
         JustifyLeft JustifyCenter JustifyRight JustifyBlock -
@@ -150,3 +150,4 @@ require plugin_root + '/redmine_ckeditor/messages_controller_patch'
 require plugin_root + '/redmine_ckeditor/mail_handler_patch'
 require plugin_root + '/redmine_ckeditor/pdf_patch'
 require plugin_root + '/redmine_ckeditor/tempfile_patch'
+require plugin_root + '/redmine_ckeditor/csv_export_patch'

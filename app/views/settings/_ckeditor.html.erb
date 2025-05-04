@@ -72,7 +72,8 @@
     var selected = to.find("option:selected").first();
     from.find("option:selected").remove().each(function() {
       if (this.value == '-' || this.value == '--' || this.value == '/') return;
-      selected.size() ? selected.before(this) : to.append(this);
+      //selected.size() ? selected.before(this) : to.append(this);
+      to.append(this);
     });
     to.prop("selectedIndex", -1);
     changeHandler();

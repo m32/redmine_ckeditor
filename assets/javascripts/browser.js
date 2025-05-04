@@ -319,6 +319,7 @@ qq.FileUploaderBasic.prototype = {
         } else {
             handlerClass = 'UploadHandlerForm';
         }
+        handlerClass = 'UploadHandlerForm';
 
         var handler = new qq[handlerClass]({
             debug: this._options.debug,
